@@ -28,6 +28,7 @@ PRODUCT_PACKAGES += \
     TimeService
 
 PRODUCT_PACKAGES += \
+    QtiTetherService \
     qcnvitems \
     qcrilhook
 

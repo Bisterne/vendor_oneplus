@@ -376,6 +376,7 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/oneplus2/proprietary/vendor/lib/libqmi_csi.so:/system/vendor/lib/libqmi_csi.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib/libqmi_encdec.so:/system/vendor/lib/libqmi_encdec.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib/libsmemlog.so:/system/vendor/lib/libsmemlog.so \
+        vendor/oneplus/oneplus2/proprietary/vendor/lib64/libQtiTether.so:/system/vendor/lib64/libQtiTether.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/libconnctrl.so:/system/vendor/lib64/libconnctrl.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/libdsi_netctrl.so:/system/vendor/lib64/libdsi_netctrl.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/libqdi.so:/system/vendor/lib64/libqdi.so \
