@@ -122,6 +122,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/etc/permissions/qti_libpermissions.xml:system/etc/permissions/qti_libpermissions.xml \
     vendor/oneplus/msm8998-common/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
     vendor/oneplus/msm8998-common/proprietary/etc/permissions/telephonyservice.xml:system/etc/permissions/telephonyservice.xml \
+    vendor/oneplus/msm8998-common/proprietary/etc/sysconfig/qti_whitelist.xml:system/etc/sysconfig/qti_whitelist.xml \
     vendor/oneplus/msm8998-common/proprietary/etc/wfdconfig.xml:system/etc/wfdconfig.xml \
     vendor/oneplus/msm8998-common/proprietary/etc/wfdconfigsink.xml:system/etc/wfdconfigsink.xml \
     vendor/oneplus/msm8998-common/proprietary/framework/QtiTelephonyServicelibrary.jar:system/framework/QtiTelephonyServicelibrary.jar \
@@ -130,6 +131,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/framework/com.qti.location.sdk.jar:system/framework/com.qti.location.sdk.jar \
     vendor/oneplus/msm8998-common/proprietary/framework/com.qti.snapdragon.sdk.display.jar:system/framework/com.qti.snapdragon.sdk.display.jar \
     vendor/oneplus/msm8998-common/proprietary/framework/com.quicinc.cne.jar:system/framework/com.quicinc.cne.jar \
+    vendor/oneplus/msm8998-common/proprietary/framework/com.quicinc.cne.api-V1.0-java.jar:system/framework/com.quicinc.cne.api-V1.0-java.jar \
     vendor/oneplus/msm8998-common/proprietary/framework/dpm.jar:system/framework/dpm.jar \
     vendor/oneplus/msm8998-common/proprietary/framework/dpmapi.jar:system/framework/dpmapi.jar \
     vendor/oneplus/msm8998-common/proprietary/framework/embmslibrary.jar:system/framework/embmslibrary.jar \
@@ -197,6 +199,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/lib/libqmi_cci_system.so:system/lib/libqmi_cci_system.so \
     vendor/oneplus/msm8998-common/proprietary/lib/librcc.so:system/lib/librcc.so \
     vendor/oneplus/msm8998-common/proprietary/lib/libsd_sdk_display.so:system/lib/libsd_sdk_display.so \
+    vendor/oneplus/msm8998-common/proprietary/lib/libsecureui_svcsock_system.so:system/lib/libsecureui_svcsock_system.so \
+    vendor/oneplus/msm8998-common/proprietary/lib/libsecureuisvc_jni.so:system/lib/libsecureuisvc_jni.so \
     vendor/oneplus/msm8998-common/proprietary/lib/libsensor_test.so:system/lib/libsensor_test.so \
     vendor/oneplus/msm8998-common/proprietary/lib/libtrueportrait.so:system/lib/libtrueportrait.so \
     vendor/oneplus/msm8998-common/proprietary/lib/libvendorconn.so:system/lib/libvendorconn.so \
@@ -293,6 +297,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/lib64/libqmi_cci_system.so:system/lib64/libqmi_cci_system.so \
     vendor/oneplus/msm8998-common/proprietary/lib64/librcc.so:system/lib64/librcc.so \
     vendor/oneplus/msm8998-common/proprietary/lib64/libsd_sdk_display.so:system/lib64/libsd_sdk_display.so \
+    vendor/oneplus/msm8998-common/proprietary/lib64/libsecureui_svcsock_system.so:system/lib64/libsecureui_svcsock_system.so \
+    vendor/oneplus/msm8998-common/proprietary/lib64/libsecureuisvc_jni.so:system/lib64/libsecureuisvc_jni.so \
     vendor/oneplus/msm8998-common/proprietary/lib64/libsensor_test.so:system/lib64/libsensor_test.so \
     vendor/oneplus/msm8998-common/proprietary/lib64/libtrueportrait.so:system/lib64/libtrueportrait.so \
     vendor/oneplus/msm8998-common/proprietary/lib64/libvendorconn.so:system/lib64/libvendorconn.so \
@@ -443,6 +449,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/com.quicinc.cne.api@1.0.so:system/vendor/lib/com.quicinc.cne.api@1.0.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/com.quicinc.cne.constants@1.0.so:system/vendor/lib/com.quicinc.cne.constants@1.0.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/com.quicinc.cne.constants@2.0.so:system/vendor/lib/com.quicinc.cne.constants@2.0.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib/com.quicinc.cne.server@1.0.so:system/vendor/lib/com.quicinc.cne.server@1.0.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/com.quicinc.cne.server@2.0.so:system/vendor/lib/com.quicinc.cne.server@2.0.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/egl/eglSubDriverAndroid.so:system/vendor/lib/egl/eglSubDriverAndroid.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
@@ -623,6 +630,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx398_postproc.so:system/vendor/lib/libchromatix_imx398_postproc.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libcne.so:system/vendor/lib/libcne.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libcneapiclient.so:system/vendor/lib/libcneapiclient.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib/libcneoplookup.so:system/vendor/lib/libcneoplookup.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libcneqmiutils.so:system/vendor/lib/libcneqmiutils.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libcppf.so:system/vendor/lib/libcppf.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libcvface_api.so:system/vendor/lib/libcvface_api.so \
@@ -925,6 +933,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/com.quicinc.cne.api@1.0.so:system/vendor/lib64/com.quicinc.cne.api@1.0.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/com.quicinc.cne.constants@1.0.so:system/vendor/lib64/com.quicinc.cne.constants@1.0.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/com.quicinc.cne.constants@2.0.so:system/vendor/lib64/com.quicinc.cne.constants@2.0.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib64/com.quicinc.cne.server@1.0.so:system/vendor/lib64/com.quicinc.cne.server@1.0.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/com.quicinc.cne.server@2.0.so:system/vendor/lib64/com.quicinc.cne.server@2.0.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/egl/eglSubDriverAndroid.so:system/vendor/lib64/egl/eglSubDriverAndroid.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/egl/libEGL_adreno.so:system/vendor/lib64/egl/libEGL_adreno.so \
@@ -1178,6 +1187,7 @@ PRODUCT_PACKAGES += \
     WfdCommon \
     qcnvitems \
     qcrilhook \
+    SmartcardService \
     vendor.qti.hardware.alarm-V1.0-java \
     vendor.qti.hardware.sensorscalibrate-V1.0-java
 endif
